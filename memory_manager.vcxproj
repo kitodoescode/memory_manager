@@ -141,7 +141,8 @@
     <ClCompile Include="src\memory.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="src\syscalls.asm" />
+    <MASM Include="src\direct.asm" />
+    <MASM Include="src\indirect.asm" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

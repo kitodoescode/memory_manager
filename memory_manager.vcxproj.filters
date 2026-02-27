@@ -25,7 +25,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="src\syscalls.asm">
+    <MASM Include="src\direct.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="src\indirect.asm">
       <Filter>Source Files</Filter>
     </MASM>
   </ItemGroup>
