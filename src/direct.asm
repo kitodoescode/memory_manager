@@ -18,20 +18,20 @@ ntwrite PROC
 	ret
 ntwrite ENDP
 
-PUBLIC ntallocate
-ntallocate PROC
+PUBLIC ntalloc
+ntalloc PROC
 	mov r10, rcx
 	mov eax, 24
 	syscall
 	ret
-ntallocate ENDP
+ntalloc ENDP
 
-PUBLIC ntprotect
-ntprotect PROC
+PUBLIC ntprot
+ntprot PROC
 	mov r10, rcx
 	mov eax, 80
 	syscall
 	ret
-ntprotect ENDP
+ntprot ENDP
 
 END

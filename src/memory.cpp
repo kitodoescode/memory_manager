@@ -84,6 +84,7 @@ memory_t::memory_t() {
 	is_attached_to_roblox = false;
 	is_initialized = false;
 	type = memory_type::indirect_syscall;
+	funcs = {};
 	initialize_functions();
 }
 
