@@ -24,7 +24,7 @@ It supports multiple memory backends - winapi, ntdll exports, direct syscalls, a
 | `winapi`           | Uses the standard Windows API functions (`ReadProcessMemory` etc.).                                                |
 | `ntdll`            | Uses the NT functions exported by `ntdll.dll`.                                                                     |
 | `syscall_direct`   | Executes direct system calls through allocated syscall stubs.                                                      |
-| `syscall_indirect` | Executes indirect system calls through syscall stubs allocated that jump into `ntdll `.                            |
+| `syscall_indirect` | Executes indirect system calls through allocated syscall stubs that jump into `ntdll.dll`.                         |
 
 Backends can be changed at runtime using the `set_backend` function like such:
 
